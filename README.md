@@ -1,5 +1,5 @@
 # agrinho-2026
-proje# Projeto Agrinho 2026 🌾🏙️
+# Projeto Agrinho 2026 🌾🏙️
 > **Tema:** Campo e Cidade: Conexões que transformam
 
 Este é um projeto web interativo desenvolvido para o Concurso Agrinho 2026. A aplicação explora a interdependência entre o meio rural e o urbano, destacando como a tecnologia e a sustentabilidade unem esses dois mundos para construir um futuro melhor.
