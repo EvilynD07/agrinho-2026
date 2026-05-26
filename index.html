@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrinho 2026 - Campo e Cidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Agrinho 2026</h1>
+        <p>Campo e Cidade: Conexões que Transformam</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">O Projeto</a>
+        <a href="#pilares">Pilares da Inovação</a>
+        <a href="#quiz">Desafio Conectado</a>
+    </nav>
+
+    <div class="container">
+        
+        <section id="sobre">
+            <h2>🌱 Conectando Ecossistemas</h2>
+            <p>O futuro sustentável nasce da união entre a produção do campo e a inteligência tecnológica desenvolvida nas cidades. Quando a tradição rural se encontra com as ferramentas digitais e a robótica, transformamos a realidade social, econômica e ambiental de toda a nossa comunidade.</p>
+        </section>
+
+        <section id="pilares">
+            <h2>💜 Tecnologia & Campo Sustentável</h2>
+            <p>Conheça as principais frentes onde a cidade e o campo interagem diretamente:</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Drones & Análise</h3>
+                    <p>Sensores aéreos mapeiam a saúde da lavoura e otimizam a aplicação de insumos sem desperdício.</p>
+                </div>
+                <div class="card">
+                    <h3>Robótica Aplicada</h3>
+                    <p>Sistemas automatizados ajudam pequenos produtores no manejo diário e reduzem o esforço físico pesado.</p>
+                </div>
+                <div class="card">
+                    <h3>Gestão de Recursos</h3>
+                    <p>Softwares urbanos cruzam dados climáticos para prever secas e proteger as nascentes de água.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="quiz">
+            <h2>🎮 Quiz Interativo</h2>
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <span>Pergunta Única</span>
+                    <div class="score-board">Pontuação: <span id="score">0</span></div>
+                </div>
+                
+                <p id="question"><strong>Como a tecnologia desenvolvida nas cidades pode apoiar a preservação ambiental no campo?</strong></p>
+                
+                <button class="options-btn" onclick="checkAnswer(false)">A) Aumentando o uso de produtos químicos sem monitoramento.</button>
+                <button class="options-btn" onclick="checkAnswer(true)">B) Criando sistemas inteligentes de irrigação baseados em IA que evitam o desperdício de água.</button>
+                <button class="options-btn" onclick="checkAnswer(false)">C) Substituindo completamente a vegetação natural por galpões industriais.</button>
+                
+                <div id="feedback"></div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 - Concurso Agrinho | Conexões que Transformam o Futuro</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
