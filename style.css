@@ -1,0 +1,195 @@
+/* === PALETA DE CORES E VARIÁVEIS === */
+:root {
+    --primary-purple: #6a1b9a; /* Roxo Tecnológico */
+    --light-purple: #f3e5f5; /* Roxo Claro para fundos */
+    --accent-green: #2e7d32; /* Verde Campo */
+    --light-green: #e8f5e9; /* Verde Claro para destaques */
+    --dark-text: #2c3e50;
+    --white: #ffffff;
+    --gray-bg: #f8f9fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--gray-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+/* === CABEÇALHO === */
+header {
+    background: linear-gradient(135deg, var(--primary-purple), var(--accent-green));
+    color: var(--white);
+    padding: 3rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+header p {
+    font-style: italic;
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* === MENU === */
+nav {
+    background-color: #2a0845;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: var(--white);
+    padding: 1.2rem 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--accent-green);
+    color: var(--white);
+}
+
+/* === LAYOUT === */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--white);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    margin-bottom: 2.5rem;
+    border-top: 5px solid var(--primary-purple);
+}
+
+h2 {
+    color: var(--primary-purple);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* === NOVO: GALERIA DE CARDS (PILAREES) === */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card {
+    background-color: var(--light-purple);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid var(--accent-green);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary-purple);
+    margin-bottom: 0.5rem;
+}
+
+/* === NOVO: PAINEL DE PONTUAÇÃO DO QUIZ === */
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    background: var(--light-purple);
+    padding: 0.8rem;
+    border-radius: 6px;
+}
+
+.score-board {
+    font-weight: bold;
+    color: var(--primary-purple);
+    font-size: 1.1rem;
+}
+
+.quiz-container {
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 2px solid var(--light-purple);
+    border-radius: 8px;
+}
+
+.options-btn {
+    display: block;
+    width: 100%;
+    background-color: var(--white);
+    border: 2px solid #ddd;
+    padding: 1rem;
+    margin: 0.6rem 0;
+    text-align: left;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.options-btn:hover {
+    border-color: var(--primary-purple);
+    background-color: var(--light-purple);
+}
+
+#feedback {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-weight: bold;
+    display: none; /* Inicia escondido */
+}
+
+.correct { 
+    display: block !important;
+    background-color: var(--light-green); 
+    color: var(--accent-green); 
+}
+.wrong { 
+    display: block !important;
+    background-color: #ffebee; 
+    color: #c62828; 
+}
+
+/* === RODAPÉ === */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #2a0845;
+    color: var(--white);
+    margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+    header h1 { font-size: 2rem; }
+    nav { flex-direction: column; }
+    nav a { padding: 1rem; text-align: center; border-bottom: 1px solid #3d145a; }
+}
